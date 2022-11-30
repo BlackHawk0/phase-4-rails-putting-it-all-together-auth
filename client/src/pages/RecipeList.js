@@ -12,7 +12,6 @@ function RecipeList() {
       .then((r) => r.json())
       .then(setRecipes);
   }, []);
-
   return (
     <Wrapper>
       {recipes.length > 0 ? (

@@ -5,7 +5,7 @@ class RecipesController < ApplicationController
     # GET /recipes
     def index
         recipes = Recipe.all
-        render json: recipes, status: :created
+        render json: recipes, include:['user']
 
     end
 
